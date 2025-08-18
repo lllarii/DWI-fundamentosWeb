@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PodOuvir</title>
+        <Link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
+    </head>
+    <body>
+
+      <header>
+      <h1>Indexador de Podcasts</h1>
+      <p>Um guia de bons programas para todos os ouvintes.</p>
+      <img src="./assets/img/podcastGeral.jpg" alt="Imagem que representa podcasts" height="240">
+      </header>
+
+      <nav>
+        <h3>Guia</h3>
+        <ol>
+          <li>Episódio em alta</li>
+          <li>Destaques</li>
+          <li>Pods de tabela</li>
+          <li>Envie a sua sugestão</li>
+        </ol>
+      </nav>
+
+      <section>
+      <h2>Episódio em alta</h2>
+      <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/78ofRbBXPBcpFatalstnOb?utm_source=generator&theme=0" width="50%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </section>
+
+      <section>
+      <h2>Destaques da semana</h2>
+      <ul>
+        <li>
+          Podcast A Mulher da Casa Abandonada vira série de TV - <a href="https://www1.folha.uol.com.br/ilustrada/2025/08/podcast-a-mulher-da-casa-abandonada-vira-serie-de-tv-que-da-voz-para-a-vitima.shtml" target="_blank">Folha</a>
+        </li>
+        <li>
+          SEC lança podcast voltado à análise e debate sobre assuntos de repercussão na sociedade - <a href="https://jornal.unicamp.br/noticias/2025/08/15/sec-lanca-podcast-voltado-a-analise-e-debate-sobre-assuntos-de-repercussao-na-sociedade/" target="_blank">Unicamp</a>
+        </li>
+        <li>
+          Podcast aborda como o Brasil pode influenciar debates sobre alimentação na COP30 - <a href="Podcast aborda como o Brasil pode influenciar debates sobre alimentação na COP30" target="_blank">Jornal da USP</a>
+        </li>
+      </ul>
+      </section>
+
+      <hr>
+
+      <h2>Pods de tabela</h2>
+      <table>
+        <tr>
+          <th></th>
+          <th>Podcast</th>
+          <th>Criador(es)</th>
+          <th>Escute aqui</th>
+          <th>Data do episódio</th>
+          <th>Site oficial</th>
+        </tr>
+        <tr>
+          <td><img src="./assets/img/vinteMilLeguas.png" alt="Logo Vinte Mil Léguas" height="100"></td>
+          <td>Vinte Mil Léguas</td>
+          <td>Megafauna Livraria Ltda</td>
+          <td><a href="https://open.spotify.com/episode/2V646JcIw4eu8niQcnm0ap?go=1&sp_cid=f7ecdf9c2516060f16508fa645205c98&utm_source=embed_player_p&utm_medium=desktop&nd=1&dlsi=10b83b6c42d041b8" target="_blank">Cambaxirras, bicudos, papa-figos e tentilhões</a></td>
+          <td>28 de setembro de 2020</td>
+          <td><a href="https://www.livrariamegafauna.com.br/pra-ver-e-ouvir/podcasts/" target="_blank">Livraria Megafauna | Vinte Mil Léguas</a> </td>
+        </tr>
+        <tr>
+          <td><img src="./assets/img/terceiraMargemReno.jpg" alt="Logo A Terceira Margem do Reno" height="100"></td>
+          <td>A Terceira Margem do Reno</td>
+          <td>Embaixada da França, Goethe-Institut e Quatro Cinco Um</td>
+          <td><a href="https://quatrocincoum.com.br/podcasts/a-terceira-margem-do-reno/ep-3-e-um-blues-em-preto-e-branco/" target="_blank">Ep 3. É um blues em preto e branco</a></td>
+          <td>07 de dezembro de 2022</td>
+          <td><a href="https://quatrocincoum.com.br/categoria/a-terceira-margem-do-reno/" target="_blank">Quatro Cinco Um | A Terceira Margem do Reno</a> </td>
+        </tr>
+        <tr>
+          <td><img src="./assets/img/ilustrissimaconversa.jpg" alt="Logo Ilustríssima Conversa" height="100"></td>
+          <td>Ilustrissima Conversa</td>
+          <td>Folha de São Paulo</td>
+          <td><a href="https://www1.folha.uol.com.br/ilustrissima/2025/07/ia-nos-humilha-na-escrita-mas-nao-vai-acabar-com-a-literatura-diz-sergio-rodrigues.shtml" target="_blank">IA nos humilha na escrita, mas não vai acabar com a literatura, diz Sérgio Rodrigues</a></td>
+          <td>26 de julho de 2025</td>
+          <td><a href="https://www1.folha.uol.com.br/folha-topicos/ilustrissima-conversa/" target="_blank">Folha | Ilustríssima Conversa </a> </td>
+        </tr>
+      </table>
+
+      <hr>
+
+      <form>
+        <h2>Compartilhe com outros ouvintes!</h2>
+        <h4>Envie a sugestão que não sai dos seus ouvidos.</h4>
+        <label for="nome">Nome:</label> 
+        <input type="text" name="nome" placeholder="Digite o seu nome" required> <br>
+
+        <label for="tipo">Tipo de sugestão:</label>
+        <select name="tipo">
+          <option value="programa">Programa</option>
+          <option value="episodio">Episódio</option>
+          <option value="noticia">Notícia</option>
+        </select> <br>
+
+        <label for="sugestao">Sugestão:</label>
+        <textarea name="sugestao"  placeholder="Digite a sua sugestão" required></textarea> <br>
+        <button type="submit">Enviar</button>
+      </form>
+
+    </body>
+</html>

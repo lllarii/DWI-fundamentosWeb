@@ -1,0 +1,26 @@
+/* reset para remover configurações de estilo do navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
+/*Seletor :root sinaliza que as variáveis podem ser aplicadas a todo o doc (são globais)*/
+:root {
+--violet-jtc: #5d2a42ff;
+--ash-gray: #abc8c7ff;
+--taupe-gray: #919098ff;
+--rosy-brown: #ba8f95ff;
+--saffron: #f5cb5cff;
+--thistle: #cfbcdfff;
+}
+
+html {
+  width: 100%;
+}
+
+

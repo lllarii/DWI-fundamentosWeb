@@ -18,7 +18,7 @@
     <header>
       <div>
         <h1>Indexador de Podcasts</h1>
-        <p>Um guia de bons programas para todos os ouvintes!</p>
+        <p>Bons programas para excelentes ouvintes!</p>
       </div>
       <img src="./assets/img/microfone-podcast.png" alt="Imagem que representa podcasts" >
     </header>
@@ -28,31 +28,34 @@
       <nav>
         <h3>Guia</h3>
         <ol>
-          <li>Episódio em alta</li>
-          <li>Destaques</li>
-          <li>Pods de tabela</li>
-          <li>Envie a sua sugestão</li>
+          <li><a href="#episodio">Episódio em alta</a></li>
+          <li><a href="#destaque">Destaques</a></li>
+          <li><a href="#tabela">Pods de tabela</a></li>
+          <li><a href="#form">Envie a sua sugestão</a></li>
         </ol>
       </nav>
 
       <main>
         <section>
-          <h2>Episódio em alta</h2>
+          <h2 id="episodio">Episódio em alta</h2>
           <iframe data-testid="embed-iframe" style="border-radius:12px"
-            src="https://open.spotify.com/embed/episode/78ofRbBXPBcpFatalstnOb?utm_source=generator&theme=0" width="50%"
+            src="https://open.spotify.com/embed/episode/78ofRbBXPBcpFatalstnOb?utm_source=generator&theme=0" width="80%"
             height="152" frameBorder="0" allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </section>
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>        
+          </section>
 
         <section>
 
           <article>
-            <h2>Destaques da semana</h2>
+            <h2 id="destaque">Destaques da semana</h2>
             <ul>
               <li>
-                Podcast A Mulher da Casa Abandonada vira série de TV - <a
+                <p>Podcast A Mulher da Casa Abandonada vira série de TV</p>
+                <div class="subtitulo">
+                <span>Fonte: </span><a
                   href="https://www1.folha.uol.com.br/ilustrada/2025/08/podcast-a-mulher-da-casa-abandonada-vira-serie-de-tv-que-da-voz-para-a-vitima.shtml"
                   target="_blank">Folha</a>
+                  </div>
               </li>
               <li>
                 SEC lança podcast voltado à análise e debate sobre assuntos de repercussão na sociedade - <a
@@ -70,7 +73,7 @@
           <hr>
 
           <article>
-            <h2>Pods de tabela</h2>
+            <h2 id="tabela">Pods de tabela</h2>
             <table>
               <tr>
                 <th></th>
@@ -121,7 +124,7 @@
         <hr>
 
         <section>
-          <form>
+          <form id="form">
             <h2>Compartilhe com outros ouvintes!</h2>
             <h4>Envie a sugestão que não sai dos seus ouvidos.</h4>
             <label for="nome">Nome:</label>

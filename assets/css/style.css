@@ -12,7 +12,8 @@
 /*Seletor :root sinaliza que as variáveis podem ser aplicadas a todo o doc (são globais)*/
 :root {
 --violet-jtc: #5d2a42ff;
---ash-gray: #abc8c7ff;
+--lemon-chiffon-opac: rgba(241, 240, 204, 0.616);
+--lemon-chiffon: #f1f0ccff;
 --taupe-gray: #919098ff;
 --rosy-brown: #ba8f95ff;
 --saffron: #f5cb5cff;
@@ -21,6 +22,46 @@
 
 html {
   width: 100%;
+}
+
+body {
+  background-color:var(--lemon-chiffon-opac);
+}
+
+header {
+  background-image: linear-gradient(to bottom right, rgb(0, 0, 0), var(--violet-jtc));
+  text-align: center;
+  display: flex;
+  height: 60vh;
+  justify-content: center;
+  gap: 4%;
+  padding: 4vh 1vh;
+
+}
+
+header img{
+  border-radius: 50%;
+  box-shadow: 0px -2px 50px rgba(0, 0, 0, 0.212);
+}
+
+header div{
+  text-shadow: 15px 5px 15px   rgba(0, 0, 0, 0.726);
+  align-content: center;
+  width: 40%;
+}
+
+h1{
+  font-family: 'Garamond', serif;
+  font-weight: 800;
+  font-size: 3rem;
+  color: var(--lemon-chiffon);
+  margin-bottom: 3%;
+}
+
+header p{
+font-style: italic;
+font-size: 1.5rem;
+color: white;
 }
 
 

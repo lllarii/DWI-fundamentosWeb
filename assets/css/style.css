@@ -100,13 +100,25 @@ h2{
   font-weight: 800;
   font-size: 2rem;  
   margin-bottom: 3%;
-  border-left: 2px solid var(--violet-jtc);
-  padding-left: 2px;
+  border-left: 3px solid var(--violet-jtc);
+  padding-left: 10px;
 }
 
+iframe{
+  box-shadow: 4px 10px 20px gray;
+}
 
-section, article, hr {
+section, article {
   margin-bottom: 3rem;
+}
+
+hr{
+  width: 50%;
+  margin: 3rem auto;
+}
+
+span {
+  font-weight: 600;
 }
 
 ul {
@@ -117,12 +129,46 @@ ul {
   text-align: center;
 }
 
-ul li {
-  background-color: var(--rosy-brown-opac);
+.flip-card {
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  display: grid;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 3px 3px 10px;
+  background-color: var(--rosy-brown-opac);
+  width: 310px;
+  height: 95px;
+  box-shadow: 4px 10px 20px gray;
+  align-content: center;
+  backface-visibility: hidden;
+  grid-area: 1 / 1; /* empilha as duas faces */
 }
+
+.flip-card-back{
+  transform: rotateY(180deg);
+}
+
+.flip-card-back p a {
+  color: black;
+}
+
+.flip-card-back p a:hover {
+  color: var(--violet-jtc);
+}
+
+
 
 footer {
   background-image: linear-gradient(to top , rgb(0, 0, 0), var(--violet-jtc), var(--violet-jtc));

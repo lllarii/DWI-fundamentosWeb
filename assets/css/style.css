@@ -9,7 +9,7 @@
   font-family: sans-serif;
 }
 
-/*Seletor :root sinaliza que as variáveis podem ser aplicadas a todo o doc (são globais)*/
+/*seletor :root sinaliza que as variáveis podem ser aplicadas a todo o doc (são globais)*/
 :root {
 --violet-jtc: #5d2a42ff;
 --lemon-chiffon-opac: rgba(241, 240, 204, 0.616);
@@ -36,7 +36,6 @@ header {
   justify-content: center;
   gap: 4%;
   padding: 4vh 1vh;
-
 }
 
 header img{
@@ -45,7 +44,6 @@ header img{
 }
 
 header div{
-  text-shadow: 15px 5px 15px   rgba(0, 0, 0, 0.726);
   align-content: center;
   width: 40%;
 }
@@ -64,4 +62,11 @@ font-size: 1.5rem;
 color: white;
 }
 
+footer {
+  background-image: linear-gradient(to top , rgb(0, 0, 0), var(--violet-jtc), var(--violet-jtc));
+  text-align: center;
+  align-content: center;
+  height: 10vh;
+  color: var(--lemon-chiffon);
+}
 

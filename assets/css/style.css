@@ -117,7 +117,7 @@ hr{
   margin: 3rem auto;
 }
 
-span {
+span, th {
   font-weight: 600;
 }
 
@@ -168,7 +168,36 @@ ul {
   color: var(--violet-jtc);
 }
 
+table{
+  box-shadow: 4px 10px 20px gray;
+}
 
+th {
+  background-color: var(--violet-jtc);
+  color: var(--lemon-chiffon);
+  height: 3rem;
+}
+
+td {
+  background-color: var(--lemon-chiffon);
+  color: black;
+  text-align: center;
+}
+
+td a {
+  color: black;
+  text-decoration: underline;
+}
+
+td a:hover {
+  color: var(--violet-jtc);
+}
+
+.logos {
+  background-color: var(--violet-jtc);
+  padding: 5px 5px;
+  align-items: center;
+}
 
 footer {
   background-image: linear-gradient(to top , rgb(0, 0, 0), var(--violet-jtc), var(--violet-jtc));

@@ -14,11 +14,8 @@
 --violet-jtc: #5d2a42ff;
 --lemon-chiffon-opac: rgba(241, 240, 204, 0.616);
 --lemon-chiffon: #f1f0ccff;
---taupe-gray: #919098ff;
 --rosy-brown-opac: rgba(186, 143, 149, 0.541);
 --rosy-brown: rgb(186, 143, 149);
---saffron: #f5cb5cff;
---thistle: #cfbcdfff;
 }
 
 html {
@@ -168,10 +165,6 @@ ul {
   color: var(--violet-jtc);
 }
 
-table{
-  box-shadow: 4px 10px 20px gray;
-}
-
 th {
   background-color: var(--violet-jtc);
   color: var(--lemon-chiffon);
@@ -197,6 +190,62 @@ td a:hover {
   background-color: var(--violet-jtc);
   padding: 5px 5px;
   align-items: center;
+}
+
+#divisao {
+  background-color: var(--rosy-brown-opac);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 10px 10px 20px gray;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 1.5rem;
+  background-color: var(--rosy-brown-opac);
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px gray;
+}
+
+form label{
+  padding-left: 0.5rem;
+  font-weight: 600;
+}
+
+form input,
+textarea, select {
+  margin: 0.5rem 0;
+  padding: 0.6rem 1rem;
+  border-radius: 1.25rem;
+  border: none;
+  font-size: 1rem;
+}
+textarea {
+  height: 6rem;
+}
+
+select{
+  width: 200px;
+}
+
+form button {
+  text-align: center;
+  padding: 0.75rem 2rem;
+  background: var(--violet-jtc);
+  color: var(--lemon-chiffon);
+  border-radius: 1rem;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  width: fit-content;
+  margin-right: 10px;
+  align-self: flex-end;
+}
+
+form button:hover {
+  background-color:maroon;
 }
 
 footer {

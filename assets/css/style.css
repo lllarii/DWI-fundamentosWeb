@@ -118,23 +118,27 @@ span, th {
   font-weight: 600;
 }
 
-ul {
+#cartoes {
   display: flex;
-  gap: 2%;
-  list-style-type: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
   font-size: 1.2rem;
   text-align: center;
 }
 
+
 .flip-card {
   perspective: 1000px;
+  width: 310px;
+  height: 95px;
+  margin: 20px;
 }
 
 .flip-card-inner {
   position: relative;
   transition: transform 1s;
   transform-style: preserve-3d;
-  display: grid;
+  
 }
 
 .flip-card:hover .flip-card-inner {
@@ -150,7 +154,7 @@ ul {
   box-shadow: 4px 10px 20px gray;
   align-content: center;
   backface-visibility: hidden;
-  grid-area: 1 / 1; /* empilha as duas faces */
+  position: absolute;
 }
 
 .flip-card-back{

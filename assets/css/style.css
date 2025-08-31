@@ -124,6 +124,7 @@ span, th {
   justify-content: space-between;
   font-size: 1.2rem;
   text-align: center;
+  
 }
 
 
@@ -206,7 +207,7 @@ td a:hover {
 form {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
   padding: 1.5rem;
   background-color: var(--rosy-brown-opac);
   border-radius: 10px;
@@ -250,13 +251,15 @@ form button {
 
 form button:hover {
   background-color:maroon;
+  cursor: pointer;
 }
 
 footer {
   background-image: linear-gradient(to top , rgb(0, 0, 0), var(--violet-jtc), var(--violet-jtc));
   text-align: center;
   align-content: center;
-  height: 10vh;
+  height: 11vh;
+  width: 100%;
   color: var(--lemon-chiffon);
 }
 

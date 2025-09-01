@@ -1,0 +1,117 @@
+/* reset para remover configurações de estilo do navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
+/*seletor :root sinaliza que as variáveis podem ser aplicadas a todo o doc (são globais)*/
+:root {
+--yale-blue: #133e73ff;
+--pacific-cyan: #23b5d3ff;
+--moonstone: #75abbcff;
+--moonstone-opac: rgba(117, 171, 188, 0.329);
+--cadet-gray: #a2aebbff;
+--platinum: #dfe0e2ff;
+--oxford-blue: #0e1a34ff;
+--yale-blue-2: #103e72ff;
+}
+
+html {
+  width: 100%;
+}
+
+.parallax {
+  position: relative;
+  background-image: url('../img/banner-desenvolvimentoweb.jpg');
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+#titulo{
+  position: absolute;
+  /* top: 50%; left: 50%; posiciona a canto superior esquerdo do quadro no centro do contêiner. */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* considera os vetores x e y para deslocar o elemento para cima e para a esquerda, cada movimento correspondendo a 50% da largura e altura do próprio elemento. O centro do elemento fica alinhado ao centro do contêiner — criando o efeito visual de centralização horizontal e vertical perfeita */
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: 10px 10px 10px black;
+  color: white;
+  padding: 2rem 2rem;
+  border-radius: 0.5rem;
+  z-index: 1;
+}
+
+h1{
+  font-size: 3rem;
+  padding-bottom: 1rem;
+  font-weight: 700;
+}
+
+main{
+  background: linear-gradient(to right, var(--yale-blue-2), var(--oxford-blue)) 
+}
+
+#lista-exercicios{
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90vw;
+  gap: 60px;
+
+
+  
+}
+
+a {
+  color: black;
+}
+
+img {
+  border-radius: 0.5rem;
+}
+
+.card{
+  background-color: var(--platinum);
+  padding: 0.6rem;
+  width: 350px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  text-align: center;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.418);
+  
+}
+
+.card:hover {
+  background-color: var(--moonstone);
+}
+
+
+
+h2{
+  font-weight: 800;
+  padding: 0.3rem;
+}
+
+h3{
+  font-weight: 600;
+  padding: 0.3rem;
+}
+
+p{
+  padding: 0.3rem;
+  text-align: justify;
+}
+  

@@ -13,8 +13,8 @@
 :root {
 --yale-blue: #133e73ff;
 --pacific-cyan: #23b5d3ff;
---moonstone: #75abbcff;
---moonstone-opac: rgba(117, 171, 188, 0.329);
+--moonstone: #75abbc;
+--moonstone-opac: #B6D2DB;
 --cadet-gray: #a2aebbff;
 --platinum: #dfe0e2ff;
 --oxford-blue: #0e1a34ff;
@@ -69,9 +69,6 @@ main{
   justify-content: space-between;
   width: 90vw;
   gap: 60px;
-
-
-  
 }
 
 a {
@@ -80,6 +77,13 @@ a {
 
 img {
   border-radius: 0.5rem;
+  height: 210px; 
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Transição suave para o zoom */
+}
+
+img:hover {
+  transform: scale(1.8); /* Aumenta a imagem em 80% */
 }
 
 .card{
@@ -95,7 +99,7 @@ img {
 }
 
 .card:hover {
-  background-color: var(--moonstone);
+  background-color: var(--moonstone-opac);
 }
 
 

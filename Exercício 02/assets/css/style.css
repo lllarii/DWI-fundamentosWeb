@@ -1,0 +1,19 @@
+/* reset para remover configurações de estilo do navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
+/*seletor :root sinaliza que as variáveis podem ser aplicadas a todo o doc (são globais)*/
+:root {
+
+}
+
+html {
+  width: 100%;
+}

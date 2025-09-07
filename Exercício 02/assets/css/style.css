@@ -58,6 +58,18 @@ main {
   gap: 5vh;
 }
 
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.6rem 0.6rem 2.5rem;
+  width: 285px;
+  text-align: left;
+  border-radius: 0.2rem;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.418);
+  position: relative;
+}
+
 a {
   color: black;
 }
@@ -101,7 +113,10 @@ h4, p, .leia-mais {
   justify-content: space-between;
   object-fit: cover;
   align-items:end;
-  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%); 
+  position: absolute;
+  bottom: 1rem;
   
 }
 
@@ -109,12 +124,5 @@ h4, p, .leia-mais {
   height: 20px;
 }
 
-.card{
-  flex-direction: column;
-  padding: 0.6rem;
-  width: 285px;
-  text-align: left;
-  border-radius: 0.2rem;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.418);
-}
+
 

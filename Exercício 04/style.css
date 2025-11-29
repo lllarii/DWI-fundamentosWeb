@@ -1,0 +1,102 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #fafafa;
+    padding: 40px;
+}
+
+h1 {
+    text-align: center;
+    color: #5c6bc0; /* lilás pastel */
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 500px;
+    background: #ffffff;
+    margin: auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+}
+
+#novaTarefa {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #dcdcdc;
+    background: #f4f4f4;
+    font-size: 14px;
+}
+
+#btnAdd {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #aed581; 
+    color: #2e7d32;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btnAdd:hover {
+    background: #9ccc65;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+li {
+    background: #e3f2fd; 
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.concluida {
+    background: #c8e6c9 !important; 
+    text-decoration: line-through;
+    color: #6d6d6d;
+}
+
+
+button {
+    cursor: pointer;
+}
+
+.status-btn {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    margin-right: 5px;
+}
+
+.btn-status {
+    background: #fff9c4; 
+    color: #8d6e63;
+}
+
+.btn-status:hover {
+    background: #fff59d;
+}
+
+.btn-remover {
+    background: #ffcdd2; 
+    color: #c62828;
+}
+
+.btn-remover:hover {
+    background: #ef9a9a;
+}
